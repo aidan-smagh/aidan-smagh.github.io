@@ -3,16 +3,7 @@ import profile_picture from '/profile_picture.jpeg'
 function Hero() {
     return (
         <div className="flex justify-around">
-            {/*
-            <a 
-                href="Aidan_Smagh_Resume.pdf"
-                target="_blank"
-                className="bg-blue-500 px-4 py-3 text-white hover:bg-blue-400 w-64 rounded-md"
-            >
-                View Resume
-            </a>
-      */}
-            <div className="mt-30 me-8 font-noto basis-128">
+            <div className="mt-32 me-8 font-noto basis-128">
                 <h1>Hello!</h1>
                 <h2>My name is 
                     <span className="font-bold"> Aidan Smagh</span>
@@ -22,7 +13,7 @@ function Hero() {
                     and building out of my personal projects on the side.
                 </h2>
             </div>
-            <img src={profile_picture} className="w-64 h-64 rounded-full object-cover mt-50" />
+            <img src={profile_picture} className="w-64 h-64 rounded-full object-cover mt-52" />
         </div>
     );
 }
