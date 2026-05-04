@@ -15,7 +15,7 @@ const NavLink = ({ href, children }) => (
 
 function Header() {
     return (
-        <div className="flex py-4 gap-4 fixed right-20">
+        <div className="flex justify-end px-4 py-4 gap-4 fixed bg-slate-100 w-screen">
             <NavLink href="https://github.com/aidan-smagh">Github</NavLink>
             <NavLink href="https://www.linkedin.com/in/aidan-smagh-b189242a7/">LinkedIn</NavLink>
             <NavLink href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=aidansmagh@gmail.com">Email</NavLink>
