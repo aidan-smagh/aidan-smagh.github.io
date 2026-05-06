@@ -15,7 +15,7 @@ const NavLink = ({ href, children }) => (
 
 function Header() {
     return (
-        <div className="flex justify-between px-4 py-4 fixed bg-slate-100 w-screen">
+        <div className="flex justify-between px-4 py-4 z-10 fixed bg-slate-100 w-screen">
             <p className="text-left font-bold">Aidan Smagh</p>
             <div className="flex gap-4">
             <NavLink href="https://github.com/aidan-smagh">Github</NavLink>
