@@ -12,7 +12,7 @@ export const activeClass= [
     "after:scale-y-100"
 ].join(" ");
 
-export function Hero() {
+function Hero() {
     const filter = useSelector((state) => state.filter.value);
     const dispatch = useDispatch();
 

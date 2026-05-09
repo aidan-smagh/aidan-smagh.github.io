@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Header from './components/Header'
 import Project from './components/Project'
+import Footer from './components/Footer'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import './App.css'
@@ -22,6 +23,7 @@ function App() {
       <Hero/>
       <Experience/>
       <Project/>
+      <Footer/>
     </div>
     );
 }
