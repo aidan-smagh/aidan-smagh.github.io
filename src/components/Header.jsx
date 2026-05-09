@@ -1,4 +1,4 @@
-const linkClass= [
+export const underlineClass= [
     "relative cursor-pointer",
     "after:absolute after:bottom-[-2px] after:left-0",
     "after:h-0.5 after:w-full after:bg-current",
@@ -8,7 +8,7 @@ const linkClass= [
 ].join(" ");
 
 const NavLink = ({ href, children }) => (
-    <a className={linkClass} href={href} target="_blank" rel="noreferrer">
+    <a className={underlineClass} href={href} target="_blank" rel="noreferrer">
         <span className="font-bold">{children}</span>
     </a>
 );
