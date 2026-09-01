@@ -2,6 +2,7 @@ import aoi from '/aoi.jpg'
 import pairpad from '/pairpad.jpg'
 import wip from '/wip.jpg'
 import imageeditor from '/imageeditor.jpg'
+import spaceshipFlyer from '/spaceshipFlyer.png'
 
 const projects = [
     {
@@ -36,6 +37,21 @@ const projects = [
         description: "A serverless image editor made using AWS services",
         techStack: ["React", "S3", "DynamoDB", "Cloudfront", "Cognito", "Lambda", "Step Functions", "API Gateway"],
         category: "swe"
+    },
+    {
+        title: "Platform Fighter",
+        image: wip,
+        link: "https://github.com/aidan-smagh/PlatformFighter",
+        description: "A work in progress Platform Fighter with some big plans",
+        techStack: ["Unity", "C#", "Blender"],
+        category: "gameDev"
+    },
+    {
+        title: "Spaceship Flyer",
+        image: spaceshipFlyer,
+        description: "A game flying a spaceship with a focus on improving on the art side",
+        techStack: ["Unity", "C#", "Blender"],
+        category: "gameDev"
     }
 ]
 
