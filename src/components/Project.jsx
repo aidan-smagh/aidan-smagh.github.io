@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux'
 import projects from '../data/projects.js'
 
-const ProjectEntry = ({ title, techStack, link, image, extra = " ", category }) => (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="no-underline">
+const ProjectEntry = ({ title, techStack, link, image, extra = " ", category, event }) => (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="no-underline" data-umami-event={event} data-umami-event-location="projects">
         <div className="w-64 h-92 pb-4 bg-black rounded-md hover:scale-103 transition-transform duration-500">
             <img src={image} className="w-64 h-64 rounded-md mx-auto block"></img>
             <h2 className="!text-white">{title}</h2>
