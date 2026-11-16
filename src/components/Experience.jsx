@@ -24,14 +24,14 @@ function Experience() {
                 companyTitle="eServices Payment Technology"
                 jobTitle="Software Engineer-Summer Intern"
                 date="May 2026-August 2026"
-                descriptionBullets={["TBD"]}>
+                descriptionBullets={["Built and hardened full-stack features for eServices' membership platform (React, Redux, Node.js, SQL Server), spanning recycle bin/soft-delete systems, dynamic custom fields, and a real-time notification template engine."]}>
             </ExperienceEntry>
             <hr className="my-12 mx-auto h-0.5 border-t-0 bg-slate-200 max-w-1/3" />
             <ExperienceEntry
                 logo={alterea}
                 companyTitle="Alterea Inc"
                 jobTitle="Game Development Intern"
-                date="Jan 2026-May 2026"
+                date="Jan 2026-Present"
                 descriptionBullets={["Working on Agents of Influence, building gameplay systems and tools in Unity using C# and Firebase. Working across UI, audio integration, and QA to ship a polished player experience."]}
                 logoClassName="w-32">
             </ExperienceEntry>
