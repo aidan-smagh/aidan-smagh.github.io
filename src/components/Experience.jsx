@@ -1,9 +1,11 @@
-import eServices from '/eServices.jpg'
-import alterea from '/alterea.jpg'
+import eServices from '/eServices.png'
+import alterea from '/alterea.png'
 
 const ExperienceEntry = ({ logo, companyTitle, jobTitle, date, descriptionBullets }) => (
     <article className="grid items-start gap-5 py-8 md:grid-cols-[8.5rem_minmax(0,1fr)] md:gap-8">
-        <img src={logo} alt="" className="max-h-16 w-auto max-w-36 object-contain object-left" />
+        <div className="relative h-16 w-36 md:h-auto md:w-auto md:self-stretch">
+            <img src={logo} alt="" className="absolute inset-0 h-full w-full object-contain object-left md:object-center" />
+        </div>
         <div className="text-left">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                 <h3 className="text-xl">{companyTitle}</h3>

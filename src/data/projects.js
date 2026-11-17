@@ -3,6 +3,7 @@ import pairpad from '/pairpad.jpg'
 import wip from '/wip.jpg'
 import imageeditor from '/imageeditor.jpg'
 import spaceshipFlyer from '/spaceshipFlyer.png'
+import bankroll from '/bankroll.png'
 
 const projects = [
     {
@@ -47,9 +48,10 @@ const projects = [
         category: "gameDev"
     },
     {
-        title: "Spaceship Flyer",
-        image: spaceshipFlyer,
-        description: "A game flying a spaceship with a focus on improving on the art side",
+        title: "Bankroll",
+        image: bankroll,
+        link: "https://coffeeegames.itch.io/bankroll",
+        description: "A game jam board game built on a physics-driven roulette wheel, with turn-based auctions and table-driven slot machine payouts.",
         techStack: ["Unity", "C#", "Blender"],
         category: "gameDev"
     }
