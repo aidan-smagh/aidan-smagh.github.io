@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useEffect } from 'react'
 import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Header from './components/Header'
@@ -9,23 +6,23 @@ import Project from './components/Project'
 import Footer from './components/Footer'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
-import './App.css'
 
 function App() {
-
   useEffect(() => {
-    AOS.init( {once: true });
+    AOS.init({ once: true });
   }, []);
 
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      <Experience/>
-      <Project/>
-      <Footer/>
-    </div>
-    );
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Experience />
+        <Project />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default App

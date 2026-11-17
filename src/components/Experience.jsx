@@ -1,42 +1,43 @@
 import eServices from '/eServices.jpg'
 import alterea from '/alterea.jpg'
 
-const ExperienceEntry = ({ logo, companyTitle, jobTitle, date, descriptionBullets, logoClassName="w-72" }) => (
-    <div className="grid grid-cols-2 gap-4 px-64 py-8">
-        <img src={logo} className={logoClassName} />
-        <div>
-            <h2 className="font-bold">{companyTitle}</h2>
-            <h3 className="font-bold">{jobTitle}</h3>
-            <p>{date}</p>
-            <ul className="left-disc list-outside ml-4">
-                {descriptionBullets.map(bullet => <li>{bullet}</li>)}
+const ExperienceEntry = ({ logo, companyTitle, jobTitle, date, descriptionBullets }) => (
+    <article className="grid items-start gap-5 py-8 md:grid-cols-[8.5rem_minmax(0,1fr)] md:gap-8">
+        <img src={logo} alt="" className="max-h-16 w-auto max-w-36 object-contain object-left" />
+        <div className="text-left">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 className="text-xl">{companyTitle}</h3>
+                <p className="text-sm text-muted">{date}</p>
+            </div>
+            <p className="mt-1 text-ink">{jobTitle}</p>
+            <ul className="mt-3 list-disc space-y-2 pl-5">
+                {descriptionBullets.map(bullet => <li key={bullet}>{bullet}</li>)}
             </ul>
         </div>
-    </div>
+    </article>
 );
 
 function Experience() {
     return (
-        <div data-aos="fade-up" data-aos-duration="2000" className="pb-32">
-            <h1>Experience</h1>
-            <ExperienceEntry 
-                logo={eServices}
-                companyTitle="eServices Payment Technology"
-                jobTitle="Software Engineer-Summer Intern"
-                date="May 2026-August 2026"
-                descriptionBullets={["Built and hardened full-stack features for eServices' membership platform (React, Redux, Node.js, SQL Server), spanning recycle bin/soft-delete systems, dynamic custom fields, and a real-time notification template engine."]}>
-            </ExperienceEntry>
-            <hr className="my-12 mx-auto h-0.5 border-t-0 bg-slate-200 max-w-1/3" />
-            <ExperienceEntry
-                logo={alterea}
-                companyTitle="Alterea Inc"
-                jobTitle="Game Development Intern"
-                date="Jan 2026-Present"
-                descriptionBullets={["Working on Agents of Influence, building gameplay systems and tools in Unity using C# and Firebase. Working across UI, audio integration, and QA to ship a polished player experience."]}
-                logoClassName="w-32">
-            </ExperienceEntry>
-        </div>
-
+        <section id="experience" data-aos="fade-up" data-aos-duration="2000" className="scroll-mt-20 mx-auto max-w-5xl px-6 pb-8">
+            <h2 className="text-left">Experience</h2>
+            <div className="mt-4 divide-y divide-line border-t border-line">
+                <ExperienceEntry
+                    logo={eServices}
+                    companyTitle="eServices Payment Technology"
+                    jobTitle="Software Engineer-Summer Intern"
+                    date="May 2026-August 2026"
+                    descriptionBullets={["Built and hardened full-stack features for eServices' membership platform (React, Redux, Node.js, SQL Server), spanning recycle bin/soft-delete systems, dynamic custom fields, and a real-time notification template engine."]}
+                />
+                <ExperienceEntry
+                    logo={alterea}
+                    companyTitle="Alterea Inc"
+                    jobTitle="Game Development Intern"
+                    date="Jan 2026-Present"
+                    descriptionBullets={["Working on Agents of Influence, building gameplay systems and tools in Unity using C# and Firebase. Working across UI, audio integration, and QA to ship a polished player experience."]}
+                />
+            </div>
+        </section>
     );
 }
 

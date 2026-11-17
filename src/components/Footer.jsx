@@ -1,9 +1,9 @@
 function Footer() {
     return (
-        <div className="h-16 bg-slate-100 w-screen">
-            <p className="py-4">© 2026 Aidan Smagh </p>
-        </div>
+        <footer className="border-t border-line">
+            <p className="mx-auto max-w-5xl px-6 py-6 text-left text-sm text-muted">© 2026 Aidan Smagh</p>
+        </footer>
     );
 }
 
-export default Footer
+export default Footer;
